@@ -4,7 +4,7 @@ namespace DerCommander610\gamemode\Commands;
 use DerCommander610\gamemode\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\player\GameMode;
 
 class gamemodespectator extends Command{
@@ -19,7 +19,7 @@ class gamemodespectator extends Command{
         if($sender instanceof Player){
             if($sender->hasPermission("gm.command.spectator")){
                 $sender->sendMessage($config->get("Prefix") . " §7You succefully set your Gamemode to Spectator!");
-                $sender->setGamemode(GameMode::SPECTATOR());
+                $player->setGamemode(GameMode::SPECTATOR());
                 return true;
             }
         }else{
