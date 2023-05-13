@@ -19,7 +19,7 @@ class gamemodeadventure extends Command{
         if($sender instanceof Player){
             if($sender->hasPermission("gm.command.adventure")){
                 $sender->sendMessage($config->get("Prefix") . " §7You succefully set your Gamemode to Adventure!");
-                $sender->setGamemode(GameMode::ADVENTURE());
+                $player->setGamemode(GameMode::ADVENTURE());
                 return true;
             }
         }else{
