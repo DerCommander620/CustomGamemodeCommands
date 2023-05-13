@@ -1,0 +1,15 @@
+name: GamemodeCommands
+version: 1.0.0
+api: [5.0.0]
+main: DerCommander610\gamemode\Main
+author: DerCommander610
+
+permissions:
+  gm.command.creative:
+    default: op
+  gm.command.survival:
+    default: op
+  gm.command.adventure:
+    default: op
+  gm.command.spectator:
+    default: op
