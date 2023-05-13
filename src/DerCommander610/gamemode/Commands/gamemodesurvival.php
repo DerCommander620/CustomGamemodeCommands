@@ -19,7 +19,7 @@ class gamemodesurvival extends Command{
         if($sender instanceof Player){
             if($sender->hasPermission("gm.command.survival")){
                 $sender->sendMessage($config->get("Prefix") . " §7You succefully set your Gamemode to Survival!");
-                $player->setGamemode(GameMode::SURVIVAL());
+                $sender->setGamemode(GameMode::SURVIVAL());
                 return true;
             }
         }else{
