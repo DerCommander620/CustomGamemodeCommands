@@ -19,7 +19,7 @@ class gamemodecreative extends Command{
         if($sender instanceof Player){
             if($sender->hasPermission("gm.command.creative")){
                 $sender->sendMessage($config->get("Prefix") . " §7You succefully set your Gamemode to Creative!");
-                $sender->setGamemode(GameMode::CREATIVE());
+                $player->setGamemode(GameMode::CREATIVE());
                 return true;
             }
         }else{
