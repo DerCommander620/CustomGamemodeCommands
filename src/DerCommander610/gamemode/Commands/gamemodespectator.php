@@ -19,7 +19,7 @@ class gamemodespectator extends Command{
         if($sender instanceof Player){
             if($sender->hasPermission("gm.command.spectator")){
                 $sender->sendMessage($config->get("Prefix") . " §7You succefully set your Gamemode to Spectator!");
-                $w3ne34->setGamemode(GameMode::SPECTATOR());
+                $sender->setGamemode(GameMode::SPECTATOR());
                 return true;
             }
         }else{
