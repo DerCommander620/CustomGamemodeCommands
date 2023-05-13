@@ -4,7 +4,7 @@ namespace DerCommander610\gamemode\Commands;
 use DerCommander610\gamemode\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\player\GameMode;
 
 class gamemodeadventure extends Command{
