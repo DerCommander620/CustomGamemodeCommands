@@ -10,7 +10,7 @@ use pocketmine\player\GameMode;
 class gamemodeadventure extends Command{
 
     public function __construct(){
-        parent::__construct("gm2", "Gamemode 2 Command", "gm2", ["gamemode2", "g2"]);
+        parent::__construct("gm2", "Gamemode 2 Command", "gm2", ["gamemode2", "g2", "2"]);
         parent::setPermission("gm.command.adventure");
     }
 
