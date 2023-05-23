@@ -10,7 +10,7 @@ use pocketmine\player\GameMode;
 class gamemodesurvival extends Command{
 
     public function __construct(){
-        parent::__construct("gm0", "Gamemode 0 Command", "gm0", ["gamemode0", "g0"]);
+        parent::__construct("gm0", "Gamemode 0 Command", "gm0", ["gamemode0", "g0", "0"]);
         parent::setPermission("gm.command.survival");
     }
 
