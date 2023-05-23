@@ -10,7 +10,7 @@ use pocketmine\player\GameMode;
 class gamemodespectator extends Command{
 
     public function __construct(){
-        parent::__construct("gm3", "Gamemode 3 Command", "gm3", ["gamemode3", "g3"]);
+        parent::__construct("gm3", "Gamemode 3 Command", "gm3", ["gamemode3", "g3", "3"]);
         parent::setPermission("gm.command.spectator");
     }
 
